@@ -1,0 +1,61 @@
+/* ============================================================
+   ADMIN PANEL — extends styles.css tokens
+   ============================================================ */
+.admin-shell{ min-height:100vh; background:var(--ink); color:var(--bone); }
+
+.admin-nav{ border-bottom:1px solid rgba(245,242,233,.12); padding:18px 0; }
+.admin-nav .wrap{ display:flex; align-items:center; justify-content:space-between; }
+.admin-nav .brand{ display:flex; align-items:center; gap:12px; }
+.admin-nav .brand img{ height:34px; }
+.admin-nav .brand span{ font-family:var(--display); font-size:18px; color:var(--white); }
+.admin-nav .status{ font-family:var(--mono); font-size:12px; color:var(--steel); display:flex; align-items:center; gap:12px; }
+
+.login-shell{
+  min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+}
+.login-card{
+  width:100%; max-width:380px; background:var(--ink-2);
+  border:1px solid rgba(245,242,233,.12); padding:44px 36px;
+}
+.login-card .eyebrow{ justify-content:center; }
+.login-card h1{ font-size:26px; color:var(--white); text-align:center; margin-bottom:6px; }
+.login-card .lede{ font-family:var(--serif); color:var(--bone-2); text-align:center; font-size:14.5px; margin-bottom:30px; }
+
+.admin-main{ padding:48px 0 90px; }
+.admin-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:34px; flex-wrap:wrap; gap:14px; }
+.admin-head h2{ font-size:30px; color:var(--white); }
+.count-pill{ font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; border:1px solid var(--gold-deep); color:var(--gold); padding:6px 12px; }
+
+.admin-tabs{ display:flex; gap:2px; margin-bottom:28px; }
+.admin-tabs button{
+  background:var(--ink-2); border:none; color:var(--steel);
+  font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  padding:12px 20px; transition:color .2s, background .2s;
+}
+.admin-tabs button.active{ background:var(--gold); color:var(--ink); }
+.admin-tabs button:not(.active):hover{ color:var(--bone); }
+
+.mod-card{
+  background:var(--ink-2); border:1px solid rgba(245,242,233,.1);
+  padding:24px 26px; margin-bottom:14px;
+  display:grid; grid-template-columns:1fr auto; gap:20px; align-items:start;
+}
+.mod-card .stars{ display:flex; gap:3px; margin-bottom:10px; }
+.mod-card .stars svg{ width:14px; height:14px; color:var(--gold); }
+.mod-card .stars svg.empty{ color:rgba(245,242,233,.15); }
+.mod-card p.msg{ font-family:var(--serif); font-size:15.5px; color:var(--bone); margin-bottom:10px; line-height:1.5; }
+.mod-card .who{ font-family:var(--mono); font-size:11.5px; color:var(--steel); text-transform:uppercase; letter-spacing:.05em; }
+.mod-actions{ display:flex; flex-direction:column; gap:8px; min-width:120px; }
+.mod-actions button{
+  font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase;
+  padding:9px 14px; border:1px solid; background:transparent; white-space:nowrap;
+}
+.btn-approve{ border-color:var(--ok); color:var(--ok); }
+.btn-approve:hover{ background:var(--ok); color:var(--white); }
+.btn-reject{ border-color:var(--danger); color:var(--danger); }
+.btn-reject:hover{ background:var(--danger); color:var(--white); }
+.btn-unpublish{ border-color:var(--steel); color:var(--steel); }
+.btn-unpublish:hover{ background:var(--steel); color:var(--ink); }
+
+.empty-state{ font-family:var(--mono); font-size:13px; color:var(--steel); padding:40px 0; text-align:center; }
+.admin-error{ font-family:var(--mono); font-size:12.5px; color:#e39182; margin-top:14px; text-align:center; }
