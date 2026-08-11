@@ -4,6 +4,7 @@ A responsive marketing site with a moderated client-reviews system and a
 "Request a Quote" form. Plain HTML/CSS/JS — no build step, so it deploys
 straight to GitHub Pages.
 
+
 ```
 index.html          Main site (Home, About, Services, Reviews, Quote, Contact)
 admin.html           Staff-only login + review moderation console
